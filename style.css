@@ -1,0 +1,145 @@
+@media only screen and (max-width: 600px) {
+  body {
+      background: linear-gradient(90deg, rgb(12, 12, 112), #790ae0);
+      padding: 20px; 
+  }
+
+  .rolagem {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+  }
+
+  button {
+      background-color:  rgb(5, 5, 46);
+      color: white;
+      height: 44px;
+      width: 100px;
+      border: none;
+      border-radius: 5px;
+      margin: 5px;
+      font-size: large;
+  }
+
+  button:hover {
+      border: 2px solid white;
+      background-color:  rgb(5, 5, 46);
+  }
+
+  .role {
+      border: 2px solid white;
+      background-color: rgb(5, 5, 46);
+      color: white;
+      position:relative;
+      align-items: center;
+      text-align: center;
+      font-size: 25px;
+      left: 20%;
+      height: 45px;
+      width: 200px;
+      margin-bottom: 20px;
+  }
+
+  .resultado {
+      border: 2px solid rgb(8, 8, 8);
+      background-color: rgb(5, 5, 46);
+      color: white;
+      width: 200px;
+      height: 200px;
+      line-height: 200px;
+      font-size: 50px;
+      text-align: center;
+      margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  body {
+      background:linear-gradient(90deg, rgb(12, 12, 112), #790ae0);
+      padding: 20px; 
+      transition: background 1s;
+  }
+
+  .rolagem {
+      display: flex;
+      justify-content: space-around; 
+      margin-bottom: 20px;
+  }
+
+  button {
+      background-color: rgb(5, 5, 46);
+      color: white;
+      position:relative;
+      left: 6%;
+      height: 44px;
+      width: 100px;
+      border: none;
+      border-radius: 20px;
+      margin: 5px;
+      font-size: large;
+  }
+
+  button:hover {
+      border: 2px solid white;
+      background-color: rgb(5, 5, 46);
+  }
+
+  .role {
+      border: 2px solid white;
+      border-radius: 10px;
+      background-color: rgb(5, 5, 46);
+      color: white;
+      position: sticky;
+      text-align: center;
+      left: 40%;
+      top: -60%;
+      height: 45px;
+      width: 200px;
+      margin-bottom: 20px;
+  }
+
+  .resultado {
+      border: 2px solid rgb(8, 8, 8);
+      background-color: rgb(5, 5, 46);
+      color: white;
+      position: absolute;
+      top: 55%;
+      left: 40%;
+      width: 200px;
+      height: 200px;
+      line-height: 200px;
+      font-size: 50px;
+      text-align: center;
+      margin-bottom: 20px;
+  }
+}
+
+.Button{
+    position: relative;
+    width: 100px;
+    height: 40px;
+    right: 1100px;
+    top: 300px;
+    background-color: wheat;
+    box-shadow: 0 0 2.5px 0 black;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.ball{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 100%;
+    border: none;
+    border-radius: 50%;
+    background: black;
+    transition: left 1s;
+}
+.ball-move{
+    left: calc(100%  - 40px);
+}
+.dark{
+    background: linear-gradient(90deg, rgb(196, 21, 21), rgb(209, 163, 12));
+}
