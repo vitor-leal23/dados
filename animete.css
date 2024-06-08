@@ -10,3 +10,19 @@
     80% { transform: translateX(10px); }
     100% { transform: translateX(0); }
 }
+
+.equation {
+    position: absolute;
+    font-size: 16px;
+    color: #ffffff;
+    animation: floatEquation linear infinite;
+}
+
+@keyframes floatEquation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(92vh);
+    }
+}
