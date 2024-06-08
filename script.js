@@ -9,7 +9,40 @@ function rolarDado(lados) {
     }, 500);
 }
 
-document.querySelector('.ball').addEventListener('click', (e)=>{
-    e.target.classList.toggle('ball-move');
-    document.body.classList.toggle('dark');
-}); 
+const equations = [
+    "1",
+    "1",
+    "2",
+    "2",
+    "3",
+    "3",
+    "4",
+    "4",
+    "5",
+    "5",
+    "6",
+    "6",
+    "7",
+    "7",
+    "8",
+    "9",
+    "10",
+    "d20",
+    "d15",
+    "d100",
+    "d30",
+    "12",
+    "rpg",
+    "rpg"
+];
+
+const equationContainer = document.getElementById('equations');
+
+equations.forEach((equation, index) => {
+    const equationElement = document.createElement('div');
+    equationElement.classList.add('equation');
+    equationElement.textContent = equation;
+    equationElement.style.left = `${Math.random() * 100}vw`;
+    equationElement.style.animationDuration = `${Math.random() * 8 + 4}s`; 
+    equationContainer.appendChild(equationElement);
+});
