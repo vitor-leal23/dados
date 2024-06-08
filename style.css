@@ -20,6 +20,7 @@
       border-radius: 5px;
       margin: 5px;
       font-size: large;
+      z-index: 2;
   }
 
   button:hover {
@@ -32,17 +33,17 @@
       background-color: rgb(5, 5, 46);
       color: white;
       position:relative;
+      left: 100px;
       align-items: center;
       text-align: center;
-      font-size: 25px;
-      left: 20%;
+      font-size: 32px;
       height: 45px;
       width: 200px;
       margin-bottom: 20px;
   }
 
   .resultado {
-      border: 2px solid rgb(8, 8, 8);
+      border: 2px solid rgb(255, 255, 255);
       background-color: rgb(5, 5, 46);
       color: white;
       width: 200px;
@@ -51,6 +52,7 @@
       font-size: 50px;
       text-align: center;
       margin-bottom: 20px;
+      z-index: 12;
   }
 }
 
@@ -58,7 +60,6 @@
   body {
       background:linear-gradient(90deg, rgb(12, 12, 112), #790ae0);
       padding: 20px; 
-      transition: background 1s;
   }
 
   .rolagem {
@@ -90,17 +91,17 @@
       border-radius: 10px;
       background-color: rgb(5, 5, 46);
       color: white;
-      position: sticky;
+      position: relative;
       text-align: center;
       left: 40%;
-      top: -60%;
+      top: -20px;
       height: 45px;
       width: 200px;
       margin-bottom: 20px;
   }
 
   .resultado {
-      border: 2px solid rgb(8, 8, 8);
+      border: 2px solid rgb(252, 252, 252);
       background-color: rgb(5, 5, 46);
       color: white;
       position: absolute;
@@ -115,31 +116,3 @@
   }
 }
 
-.Button{
-    position: relative;
-    width: 100px;
-    height: 40px;
-    right: 1100px;
-    top: 300px;
-    background-color: wheat;
-    box-shadow: 0 0 2.5px 0 black;
-    border-radius: 25px;
-    cursor: pointer;
-}
-.ball{
-    position:absolute;
-    top: 0;
-    left: 0;
-    width: 40px;
-    height: 100%;
-    border: none;
-    border-radius: 50%;
-    background: black;
-    transition: left 1s;
-}
-.ball-move{
-    left: calc(100%  - 40px);
-}
-.dark{
-    background: linear-gradient(90deg, rgb(196, 21, 21), rgb(209, 163, 12));
-}
